@@ -11,3 +11,22 @@ er:
   distance: 2
 exclude:
   - flyway_schema_history
+relations:
+  - table: posts
+    columns:
+      - author_user_id
+    parentTable: users
+    parentColumns:
+      - user_id
+  - table: posts_tags
+    columns:
+      - post_id
+    parentTable: posts
+    parentColumns:
+      - post_id
+  - table: posts_tags
+    columns:
+      - tag_id
+    parentTable: tags
+    parentColumns:
+      - tag_id

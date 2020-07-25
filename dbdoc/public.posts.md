@@ -8,9 +8,9 @@
 
 | Name | Type | Default | Nullable | Children | Parents | Comment |
 | ---- | ---- | ------- | -------- | -------- | ------- | ------- |
-| post_id | bigint | nextval('posts_post_id_seq'::regclass) | false |  |  | 投稿ID |
+| post_id | bigint | nextval('posts_post_id_seq'::regclass) | false | [public.posts_tags](public.posts_tags.md) |  | 投稿ID |
 | body | text |  | false |  |  | 投稿内容 |
-| author_user_id | bigint |  | false |  |  | 作成ユーザID |
+| author_user_id | bigint |  | false |  | [public.users](public.users.md) | 作成ユーザID |
 
 ## Constraints
 

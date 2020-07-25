@@ -8,8 +8,8 @@
 
 | Name | Type | Default | Nullable | Children | Parents | Comment |
 | ---- | ---- | ------- | -------- | -------- | ------- | ------- |
-| post_id | bigint |  | false |  |  | 投稿ID |
-| tag_id | bigint |  | false |  |  | タグID |
+| post_id | bigint |  | false |  | [public.posts](public.posts.md) | 投稿ID |
+| tag_id | bigint |  | false |  | [public.tags](public.tags.md) | タグID |
 
 ## Constraints
 

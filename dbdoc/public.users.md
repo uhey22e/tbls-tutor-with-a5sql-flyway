@@ -8,7 +8,7 @@
 
 | Name | Type | Default | Nullable | Children | Parents | Comment |
 | ---- | ---- | ------- | -------- | -------- | ------- | ------- |
-| user_id | bigint | nextval('users_user_id_seq'::regclass) | false |  |  | ユーザID |
+| user_id | bigint | nextval('users_user_id_seq'::regclass) | false | [public.posts](public.posts.md) |  | ユーザID |
 | user_name | varchar(255) |  | false |  |  | ユーザ名 |
 
 ## Constraints

@@ -8,7 +8,7 @@
 
 | Name | Type | Default | Nullable | Children | Parents | Comment |
 | ---- | ---- | ------- | -------- | -------- | ------- | ------- |
-| tag_id | bigint | nextval('tags_tag_id_seq'::regclass) | false |  |  | タグID |
+| tag_id | bigint | nextval('tags_tag_id_seq'::regclass) | false | [public.posts_tags](public.posts_tags.md) |  | タグID |
 | tag_name | varchar(255) |  | false |  |  | タグ名 |
 
 ## Constraints
