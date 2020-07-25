@@ -1,0 +1,13 @@
+dsn: postgres://postgres:password@localhost:15432/example?sslmode=disable
+er:
+  # ER diagram image format
+  # Default is `svg`
+  format: svg
+  # Add table/column comment to ER diagram
+  # Default is false
+  comment: true
+  # Distance between tables that display relations in the ER
+  # Default is 1
+  distance: 2
+exclude:
+  - flyway_schema_history
